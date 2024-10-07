@@ -15,6 +15,7 @@
   <link href="/assets/swiper.css" rel="stylesheet">
   <link href="/assets/all-service-main.css" rel="stylesheet">
   <link href="/assets/mobile-menu.css" rel="stylesheet">
+  <link href="/assets/modal.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/validator@13.12.0/validator.min.js"></script>
   <script src="https://api-maps.yandex.ru/v3/?apikey=68f5fe89-5e97-40ae-908f-813b01ebc585&lang=ru_RU"></script>
@@ -338,7 +339,7 @@
       </div>
     </form>
     <div class="center-flex wechat-container">
-      <button class="primary-button green-button button-with-icon" style="padding: 10px 32px">
+      <button id="wechatBtn" class="primary-button green-button button-with-icon" style="padding: 10px 32px">
         <object type="image/svg+xml" data="/icons/wechat.svg"></object>
         <span>СВЯЗАТЬСЯ ЧЕРЕЗ WECHAT</span>
       </button>
@@ -385,6 +386,11 @@
     </div>
   </div>
 </footer>
+<div id="qrModal" class="modal-wrapper fade-ease-in" style="--seconds: 0.3s; display: none">
+  <div class="qr-modal">
+    <img src="/image/qr-code.png" alt="mechat-qr">
+  </div>
+</div>
 <nav class="mobile-menu" style="display: none">
   <div class="mobile-content">
     <div class="mobile-links text-reversal">
@@ -478,6 +484,7 @@
 <script src="/js/mobile-menu.js" type="application/javascript"></script>
 <script src="/js/motion.js" type="application/javascript"></script>
 <script src="/js/form.js" type="application/javascript"></script>
+<script src="/js/qr-modal.js" type="application/javascript"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 </html>

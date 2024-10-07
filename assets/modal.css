@@ -1,0 +1,27 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--light-on-surf-op-82);
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.qr-modal {
+  position: fixed;
+  z-index: 20;
+  border: 2px solid var(--light-on-surf-op-82);
+  background: var(--general-dark);
+  max-width: 360px;
+  padding: 40px;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 767px) {
+    width: calc(100% - 40px);
+  }
+}
