@@ -1,0 +1,270 @@
+.all-service-layout {
+  min-height: 514px;
+
+  @media (max-width: 767px) {
+    min-height: unset;
+  }
+}
+
+.main-container {
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
+  gap: 24px
+}
+
+.main-container .back-btn-container {
+  display: flex;
+}
+
+.main-container .title {
+  font-size: 48px;
+  max-width: 574px;
+  padding-bottom: 200px;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    padding-bottom: 38px;
+    max-width: 220px;
+  }
+}
+
+.china-section {
+  padding-bottom: 150px;
+
+  @media (max-width: 1439px) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 32px 0 0 0;
+  }
+}
+
+.map-section-title {
+  @media (max-width: 999px) {
+    max-width: 395px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    min-width: 300px;
+  }
+}
+
+
+.china-title {
+  @media (max-width: 999px) {
+    align-items: unset;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 20px;
+  }
+}
+
+.china-title object {
+  @media (max-width: 999px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
+}
+
+.scoreboard {
+  display: grid;
+  max-width: 632px;
+  grid-template-columns: minmax(300px, 1fr) 1fr;
+  gap: 12px 32px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--light-on-sur-200);
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 20px;
+  }
+}
+
+.china-russia-icon circle {
+  fill: #2A4B57;
+}
+
+.china-mongolia-icon circle {
+  fill: #BD3A2F;
+}
+
+.score-item > .label {
+  font-weight: 500;
+  color: var(--accent-blue);
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.score-item > .value {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.china-map-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1439px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.china-legend {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--light-on-sur-200);
+  padding: 32px;
+
+  @media (max-width: 1439px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px 24px;
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 0;
+  }
+}
+
+.china-legend-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  padding-bottom: 48px;
+  transition: all 0.3s ease;
+}
+
+.china-legend-item:last-child {
+  padding-bottom: 0;
+}
+
+.path-border {
+  transition: all 0.3s ease;
+}
+
+.china-legend-item:hover {
+  transform: scale(1.1);
+}
+
+.china-legend-item > .title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.china-legend-item > .title > span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.china-legend-item .legend-list {
+  padding-left: 14px;
+}
+
+.china-legend-item .legend-list li {
+  list-style: inside;
+}
+
+.china-legend-item > .title > svg {
+  width: 32px;
+  height: 32px;
+}
+
+.china-map {
+  width: 100%;
+  max-width: 874px;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+.china-service-list {
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 999px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wechat-container {
+  margin-top: 60px;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1439px) {
+  .china-service-list {
+    padding-bottom: 0;
+  }
+
+  .china-service-list > .item-border:nth-child(7) {
+    position: unset;
+    left: unset;
+    bottom: unset;
+    width: unset;
+    height: unset;
+  }
+
+  .china-service-list > .item-border:nth-child(8) {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    width: unset;
+    height: unset;
+  }
+}
+
+@media (max-width: 999px) {
+  .china-service-list {
+    padding-bottom: 240px;
+  }
+
+  .china-service-list > .item-border:nth-child(9) {
+    position: absolute;
+    right: calc(50% - 152px);
+    bottom: 0;
+    width: 304px;
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .china-service-list {
+    padding-bottom: 0;
+  }
+
+  .china-service-list > .item-border:nth-child(9) {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    width: unset;
+    height: unset;
+  }
+}

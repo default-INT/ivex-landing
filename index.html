@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+  <link href="/assets/base.css" rel="stylesheet">
+  <link href="/assets/main.css" rel="stylesheet">
+  <link href="/assets/services-section.css" rel="stylesheet">
+  <link href="/assets/main-map.css" rel="stylesheet">
+  <link href="/assets/work-steps.css" rel="stylesheet">
+  <link href="/assets/about.css" rel="stylesheet">
+  <link href="/assets/contacts.css" rel="stylesheet">
+  <link href="/assets/footer.css" rel="stylesheet">
+  <link href="/assets/motion.css" rel="stylesheet">
+  <link href="/assets/swiper.css" rel="stylesheet">
+  <link href="/assets/mobile-menu.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/validator@13.12.0/validator.min.js"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=68f5fe89-5e97-40ae-908f-813b01ebc585&lang=ru_RU"></script>
+  <title>Vetex</title>
+</head>
+<body>
+  <header id="request-a-bid" class="header">
+    <div class="inner-header">
+      <div class="header-main-container">
+        <object type="image/svg+xml" class="logo svg-load" data="/icons/logo.svg"></object>
+        <div class="header-contact-list">
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/mail.svg">
+            </object>
+            <div>
+              <div class="secondary-text">Электронная почта</div>
+              <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg"></object>
+            <div>
+              <div class="secondary-text">Телефон РФ</div>
+              <a class="bold-text" href="skype:+79107809501?call" >+7 (910) 780 95 01</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg"></object>
+            <div>
+              <div class="secondary-text">Телефон РБ</div>
+              <a class="bold-text" href="skype:+375177809501?call">+375 (17) 780 95 01</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/home-pin.svg"></object>
+            <div>
+              <div class="secondary-text">Адрес</div>
+              <a
+                class="bold-text"
+                href="https://yandex.by/maps/org/ivex_group/7025704217/?ll=27.685435%2C53.860031&z=19.37"
+                target="_blank"
+              >
+                Минск, Партизанский пр-п. 40/2
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-header">
+        <div class="social-links header-social-links">
+          <a href="https://t.me/ivexgroup_manager" target="_blank">
+            <object type="image/svg+xml" class="svg-load" data="/icons/telegram.svg"></object>
+          </a>
+          <a href="https://www.linkedin.com/company/ivex-group" target="_blank">
+            <object type="image/svg+xml" class="svg-load" data="/icons/linkedin.svg"></object>
+          </a>
+          <a href="https://wa.me/79107809501" target="_blank">
+            <object type="image/svg+xml" class="svg-load" data="/icons/whatsapp.svg"></object>
+          </a>
+        </div>
+        <button id="menuButton" type="button">
+          <object type="image/svg+xml" class="burger-icon svg-load" data="/icons/burger.svg">
+          </object>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="main-landscape">
+    <div style="background-image: url('/image/main-landscape.jpeg')" class="background-image"></div>
+    <nav class="nav-bar">
+      <div class="links text-reversal">
+        <a href="#services">
+          <span data-hover="Услуги">Услуги</span>
+        </a>
+        <a href="#directions">
+          <span data-hover="Направления работы">
+            Направления работы
+          </span>
+        </a>
+        <a href="#work-steps">
+          <span data-hover="Этапы работы">
+            Этапы работы
+          </span>
+        </a>
+        <a href="#about">
+          <span data-hover="О компании">
+            О компании
+          </span>
+        </a>
+        <a href="#contacts">
+          <span data-hover="Контакты">
+            Контакты
+          </span>
+        </a>
+      </div>
+    </nav>
+    <div class="main-form-container">
+      <h1 class="title">
+        Автомобильные грузоперевозки
+        из<span class="underline">Китая</span>в РФ и другие страны СНГ
+      </h1>
+      <form class="main-form">
+        <div class="form-content">
+          <div class="field">
+            <label for="fullName" class="required">Имя</label>
+            <input id="fullName" name="fullName" placeholder="Как к вам обращаться?">
+          </div>
+          <div class="field">
+            <label for="company" class="required">Компания</label>
+            <input id="company" name="company" placeholder="Какую компанию вы представляете?">
+          </div>
+
+          <div class="field">
+            <label for="phone" class="required">Телефон</label>
+            <input id="phone" name="phone" placeholder="+">
+          </div>
+          <div class="field">
+            <label for="email" class="required">Электронная почта</label>
+            <input id="email" name="email" placeholder="Укажите ваш электронный адрес">
+          </div>
+
+          <div class="field wide-field">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" placeholder="Добавьте необходимые комментарии"></textarea>
+          </div>
+        </div>
+        <label class="center-flex field-checkbox">
+          <input name="isSubmitted" type="checkbox">
+          <span>Даю согласие на обработку персональных данных</span>
+        </label>
+        <div class="error-msg" style="display: none"></div>
+        <div class="actions">
+          <button type="submit" class="primary-button">Запросить ставку</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="light-section stat-section">
+    <div class="side-opacity" style="left: 0"></div>
+    <div class="page-layout stats-content">
+      <div class="stat-item">
+        <div class="value" data-to-value="27">0</div>
+        <div class="description small-stat-desc">Лет на рынке</div>
+      </div>
+      <div class="stat-item">
+        <div class="value" data-to-value="250" data-ends-symbl="+">0</div>
+        <div class="description">автопоездов в автопарке</div>
+      </div>
+      <div class="stat-item">
+        <div class="value" data-to-value="350" data-ends-symbl="+">0</div>
+        <div class="description">авто из CN ежемесячно</div>
+      </div>
+      <div class="stat-item">
+        <div class="value" data-to-value="10">0</div>
+        <div class="description">лет средний стаж</div>
+      </div>
+      <div class="stat-item">
+        <div class="value" data-to-value="7000" data-ends-symbl="+">0</div>
+        <div class="description">тонн грузов ежемесячно</div>
+      </div>
+    </div>
+    <div class="side-opacity" style="right: 0; transform: rotate(180deg);"></div>
+  </section>
+
+  <section id="services">
+    <div class="page-layout services-content">
+      <h2 class="section-title">
+        <object type="image/svg+xml" data="/icons/small-logo.svg">
+        </object>
+        <span>
+          Услуги
+        </span>
+      </h2>
+      <p class="bold-p">
+        Флагманской услугой компании являются международные автоперевозки
+        из <span class="underline">Китая,</span> Европы, Турции в РФ, РБ и другие страны СНГ
+      </p>
+
+      <div class="services-desc">
+        <h3 class="inner-title">Дополнительные услуги:</h3>
+        <div class="services-list">
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/consult.svg">
+              </object>
+              <div class="service-text">
+                Предоставление консультации от сертифицированных специалистов по перевозке ADR грузов
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/insurance.svg">
+              </object>
+              <div class="service-text">
+                Страхование грузов, в том числе возможность страхования на 110%
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/pallet.svg">
+              </object>
+              <div class="service-text">
+                Разработка схем размещения и крепления
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/box.svg">
+              </object>
+              <div class="service-text">
+                Дополнительная упаковка/переупаковка/маркировка
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/document.svg">
+              </object>
+              <div class="service-text">
+                Таможенное оформление на территории РФ
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/star.svg">
+              </object>
+              <div class="service-text">
+                Предоставление консультации от сертифицированных специалистов по перевозке ADR грузов
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/storage.svg">
+              </object>
+              <div class="service-text">
+                Складские услуги
+              </div>
+            </div>
+          </div>
+          <div class="item-border">
+            <div class="item-border-inner">
+              <object class="service-icon" type="image/svg+xml" data="/icons/services/folder.svg">
+              </object>
+              <div class="service-text">
+                Оформление документов: транзитные декларации, CMR и т.д.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-flex">
+        <a class="primary-button" href="/all-services">
+          <span>Смотреть все услуги</span>
+          <object type="image/svg+xml" data="/icons/chevron-right.svg"></object>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="directions" class="light-section">
+    <div class="page-layout services-content" style="padding-left: 0; padding-right: 0">
+      <h2 class="section-title" style="padding-left: 20px">
+        <object type="image/svg+xml" data="/icons/small-logo.svg"></object>
+        <span>НАПРАВЛЕНИЯ РАБОТЫ</span>
+      </h2>
+
+      <div class="mobile-directions">
+        <div class="mobile-legend-item" data-to-hover="china-to-cis">
+          <object type="image/svg+xml" data="/icons/line-start-arrow.svg"></object>
+          <span>Из Китая в РФ, РБ</span>
+        </div>
+        <div class="mobile-legend-item" data-to-hover="china-to-europe">
+          <object type="image/svg+xml" class="orange-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+          <span>Из Китая в Европу</span>
+        </div>
+        <div class="mobile-legend-item" data-to-hover="north-way">
+          <object type="image/svg+xml" class="purple-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+          <span>Северный маршрут</span>
+        </div>
+        <div class="mobile-legend-item" data-to-hover="south-way">
+          <object type="image/svg+xml" class="south-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+          <span>Южный маршрут</span>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <object type="image/svg+xml" class="main-map svg-load" data="/icons/main-map.svg"></object>
+        <div class="legend">
+          <div class="legend-item" data-to-hover="china-to-cis">
+            <object type="image/svg+xml" data="/icons/line-start-arrow.svg"></object>
+            <span>Из Китая в РФ, РБ</span>
+          </div>
+          <div class="legend-item" data-to-hover="china-to-europe">
+            <object type="image/svg+xml" class="orange-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+            <span>Из Китая в Европу</span>
+          </div>
+          <div class="legend-item" data-to-hover="north-way">
+            <object type="image/svg+xml" class="purple-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+            <span>Северный маршрут</span>
+          </div>
+          <div class="legend-item" data-to-hover="south-way">
+            <object type="image/svg+xml" class="south-circle svg-load" data="/icons/line-start-arrow.svg"></object>
+            <span>Южный маршрут</span>
+          </div>
+        </div>
+      </div>
+      <div class="transport-cargo-block center-flex">
+        <div id="selectOfferType" class="type-switch">
+          <button data-type="TRANSPORT">
+            Типы используемого транспорта
+          </button>
+          <button data-type="CARGO" class="active">
+            Типы перевозимых грузов
+          </button>
+        </div>
+
+        <div id="transportBox" class="transport-box fade-ease-in" style="display: none">
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/standard.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Тент стандарт</span>
+                <span class="text-description">до 21т, до 84м³</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/mega.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Тент мега</span>
+                <span class="text-description">до 22т, до 100м³</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/tandem.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Тандем</span>
+                <span class="text-description">
+                  до 21т, до 120м³<br>
+                  (Сцепка 120м³)
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/refrigerator.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Рефрижератор</span>
+                <span class="text-description">
+                  до 21т, до 84м³
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/wholemetal.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Цельномет</span>
+                <span class="text-description">
+                  до 22т, до 86м³
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-border transport-item">
+            <div class="item-border-inner transport-item-inner">
+              <object type="image/svg+xml" data="/icons/transport-type/special-equipment.svg"></object>
+              <div class="text-content">
+                <span class="text-title">Спецтехника</span>
+                <span class="text-description">
+                  Подбор техники под<br>
+                  параметры Вашего груза
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="cargoBox" class="cargo-box fade-ease-in">
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/soap.svg"></object>
+              <span>Товары народного потребления</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/devices-other.svg"></object>
+              <span>Товары электронной коммерции (e-commerce)</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/cardiology.svg"></object>
+              <span>Фармацевтика</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/directions-car.svg"></object>
+              <span>Автомобили и комплектующие</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/emergency-home.svg"></object>
+              <span>Химическая продукция (в т.ч. опасные грузы 1-6, 8, 9 классов)</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/restaurant.svg"></object>
+              <span>Продукты питания и напитки и т.д.</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/precision-manufacturing.svg"></object>
+              <span>Техника и оборудование</span>
+            </div>
+          </div>
+
+          <div class="item-border cargo-item">
+            <div class="item-border-inner cargo-item-inner">
+              <object type="image/svg+xml" data="/icons/cargo-type/bolt.svg"></object>
+              <span>Электроника, дорогостоящие грузы</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work-steps" class="work-step-section">
+    <div class="page-layout services-content xs-b-20">
+      <h2 class="section-title">
+        <object type="image/svg+xml" data="/icons/small-logo.svg">
+        </object>
+        <span>
+          Этапы работы
+        </span>
+      </h2>
+    </div>
+    <div class="work-steps-container">
+      <div class="page-layout steps-container">
+        <div class="work-step-item">
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/hands.svg"></object>
+          </div>
+          <div class="step-info-container">
+            <div class="step-title">Знакомство</div>
+            <div class="description">
+              Знакомство с Клиентом,<br> оценка текущей ситуации
+            </div>
+          </div>
+        </div>
+
+        <div class="work-step-item">
+          <div class="step-info-container">
+            <div class="step-title" style="margin: 0">Проработка маршрута</div>
+            <div class="description" style="margin: 12px 0 8px 0;">
+              Выбор оптимальных<br> маршрутов для Клиента
+            </div>
+          </div>
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/earth.svg"></object>
+          </div>
+        </div>
+
+        <div class="work-step-item">
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/puzzle.svg"></object>
+          </div>
+          <div class="step-info-container">
+            <div class="step-title">Согласование</div>
+            <div class="description">
+              Согласование коммерческого<br> предложения и установление<br> сроков и условий
+            </div>
+          </div>
+        </div>
+
+        <div class="work-step-item">
+          <div class="step-info-container">
+            <div class="step-title" style="margin: 0">Договор</div>
+            <div class="description" style="margin: 12px 0 8px 0;">
+              Заключение<br> договора
+            </div>
+          </div>
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/contract.svg"></object>
+          </div>
+        </div>
+
+        <div class="work-step-item">
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/launch.svg"></object>
+          </div>
+          <div class="step-info-container">
+            <div class="step-title">Запуск работы</div>
+            <div class="description">
+              Размещение заказа,<br>реализация перевозки
+            </div>
+          </div>
+        </div>
+
+        <div class="work-step-item">
+          <div class="step-info-container">
+            <div class="step-title" style="margin: 0">Мониторинг и улучшение</div>
+            <div class="description" style="margin: 12px 0 8px 0;">
+              Мониторинг эффективности логистических<br>процессов, развитие сотрудничества
+            </div>
+          </div>
+          <div class="icon-container">
+            <object type="image/svg+xml" data="/icons/work-steps/improvement.svg"></object>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/hands.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Знакомство</div>
+                <div class="description">
+                  Знакомство с Клиентом,<br> оценка текущей ситуации
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/earth.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Проработка маршрута</div>
+                <div class="description">
+                  Выбор оптимальных<br> маршрутов для Клиента
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/puzzle.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Согласование</div>
+                <div class="description">
+                  Согласование коммерческого<br> предложения и установление<br> сроков и условий
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/contract.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Заключение<br> договора</div>
+                <div class="description">
+                  Согласование коммерческого<br> предложения и установление<br> сроков и условий
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/launch.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Запуск работы</div>
+                <div class="description">
+                  Размещение заказа,<br>реализация перевозки
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="work-slide-item">
+              <div class="icon-container">
+                <object type="image/svg+xml" data="/icons/work-steps/improvement.svg"></object>
+              </div>
+              <div class="step-info-container">
+                <div class="step-title">Мониторинг и улучшение</div>
+                <div class="description">
+                  Мониторинг эффективности логистических<br>процессов, развитие сотрудничества
+                </div>
+              </div>
+            </div>
+            <object type="image/svg+xml" data="/icons/work-steps/short-template.svg"></object>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <object class="background-template svg-load" type="image/svg+xml" data="/icons/work-steps/template-original.svg"></object>
+    </div>
+  </section>
+
+  <section class="light-section">
+    <div class="main-form-container bottom-form-container">
+      <h2 class="bottom-title">
+        Оставьте заявку, и мы свяжемся<br>с Вами для обсуждения деталей перевозки
+      </h2>
+      <form class="main-form bottom-form">
+        <div class="form-content">
+          <div class="field">
+            <label for="fullName" class="required">Имя</label>
+            <input name="fullName" placeholder="Как к вам обращаться?">
+          </div>
+          <div class="field">
+            <label for="company" class="required">Компания</label>
+            <input name="company" placeholder="Какую компанию вы представляете?">
+          </div>
+
+          <div class="field">
+            <label for="phone" class="required">Телефон</label>
+            <input name="phone" placeholder="+">
+          </div>
+          <div class="field">
+            <label for="email" class="required">Электронная почта</label>
+            <input name="email" placeholder="Укажите ваш электронный адрес">
+          </div>
+
+          <div class="field wide-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" placeholder="Добавьте необходимые комментарии"></textarea>
+          </div>
+        </div>
+        <label class="center-flex field-checkbox">
+          <input name="isSubmitted" type="checkbox">
+          <span>Даю согласие на обработку персональных данных</span>
+        </label>
+        <div class="error-msg" style="display: none"></div>
+        <div class="actions">
+          <button type="submit" class="primary-button">Запросить ставку</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="about" style="position: relative">
+    <div
+      style="background-image: url('/image/our-location.jpeg'); transform: none; opacity: 30%;"
+      class="background-image"
+    >
+    </div>
+    <div class="page-layout services-content">
+      <h2 class="section-title">
+        <object type="image/svg+xml" data="/icons/small-logo.svg">
+        </object>
+        <span>
+          О компании
+        </span>
+      </h2>
+      <div class="about-text">
+        <b>Миссия</b> IVEX Group - эффективно управлять логистикой,<br>
+        обеспечивая <b>Клиентам</b> надёжность поставок и способствуя росту и развитию их бизнеса. 
+      </div>
+      <div class="values-container">
+        <h3 class="values-title">Наши ценности</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <span>Доверие</span>
+          </div>
+          <div class="value-item">
+            <span>Стратегическое партнёрство</span>
+          </div>
+          <div class="value-item">
+            <span>Уважение</span>
+          </div>
+          <div class="value-item">
+            <span>Актуальность</span>
+          </div>
+          <div class="value-item">
+            <span>Эффективность</span>
+          </div>
+          <div class="value-item">
+            <span>Честность</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="page-layout services-content contact-layout">
+      <h2 class="section-title contact-title">
+        <object type="image/svg+xml" data="/icons/small-logo.svg">
+        </object>
+        <span>
+          Контакты
+        </span>
+      </h2>
+      <div class="contact-info">
+        <div class="contact-list">
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/mail.svg">
+            </object>
+            <div>
+              <div class="secondary-text">Электронная почта</div>
+              <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+            </object>
+            <div>
+              <div class="secondary-text">Телефон РФ</div>
+              <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+            </object>
+            <div>
+              <div class="secondary-text">Телефон РБ</div>
+              <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <object class="contact-icon" type="image/svg+xml" data="/icons/home-pin.svg">
+            </object>
+            <div>
+              <div class="secondary-text">Адрес</div>
+              <a
+                href="https://yandex.by/maps/org/ivex_group/7025704217/?ll=27.685435%2C53.860031&z=19.37"
+                target="_blank"
+                class="bold-text"
+              >
+                Минск, Партизанский пр-п. 40/2 09:00 - 18:00 пн-пт
+              </a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://t.me/ivexgroup_manager" target="_blank">
+              <object class="svg-load" type="image/svg+xml" data="/icons/telegram.svg"></object>
+            </a>
+            <a href="https://www.linkedin.com/company/ivex-group" target="_blank">
+              <object class="svg-load" type="image/svg+xml" data="/icons/linkedin.svg"></object>
+            </a>
+            <a href="https://wa.me/79107809501" target="_blank">
+              <object class="svg-load" type="image/svg+xml" data="/icons/whatsapp.svg"></object>
+            </a>
+          </div>
+          <div class="contact-button">
+            <a href="#request-a-bid" class="primary-button">Запросить ставку</a>
+          </div>
+        </div>
+
+        <div id="yandexMap" style="height: 400px" class="our-map-location"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="page-layout services-content footer-layout">
+      <nav class="footer-nav">
+        <object type="image/svg+xml" class="logo" data="/icons/logo.svg">
+        </object>
+        <div class="footer-links text-reversal">
+          <a href="#services">
+            <span data-hover="Услуги">Услуги</span>
+          </a>
+          <a href="#directions">
+            <span data-hover="Направления работы">
+              Направления работы
+            </span>
+          </a>
+          <a href="#work-steps">
+            <span data-hover="Этапы работы">
+              Этапы работы
+            </span>
+          </a>
+          <a href="#about">
+            <span data-hover="О компании">
+              О компании
+            </span>
+          </a>
+          <a href="#contacts">
+            <span data-hover="Контакты">
+              Контакты
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-end center-flex">
+      <div class="center-flex">2024 IVEX GROUP</div>
+      <div class="center-flex privacy-policy">
+        <span>Политика конфиденциальности</span>
+        <span>Информация о cookies</span>
+      </div>
+    </div>
+  </footer>
+  <nav class="mobile-menu" style="display: none">
+    <div class="mobile-content">
+      <div class="mobile-links text-reversal">
+        <a href="#services">
+          <span data-hover="Услуги">Услуги</span>
+        </a>
+        <a href="#directions">
+        <span data-hover="Направления работы">
+          Направления работы
+        </span>
+        </a>
+        <a href="#work-steps">
+        <span data-hover="Этапы работы">
+          Этапы работы
+        </span>
+        </a>
+        <a href="#about">
+        <span data-hover="О компании">
+          О компании
+        </span>
+        </a>
+        <a href="#contacts">
+        <span data-hover="Контакты">
+          Контакты
+        </span>
+        </a>
+      </div>
+      <div class="mobile-contacts">
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/mail.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Электронная почта</div>
+            <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Телефон РФ</div>
+            <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/home-pin.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Адрес</div>
+            <a
+              href="https://yandex.by/maps/org/ivex_group/7025704217/?ll=27.685435%2C53.860031&z=19.37"
+              target="_blank"
+              class="bold-text"
+            >
+              Минск, Партизанский пр-п. 40/2 09:00 - 18:00 пн-пт
+            </a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Телефон РБ</div>
+            <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="page-layout services-content footer-layout">
+        <nav class="footer-nav">
+          <object type="image/svg+xml" class="logo" data="/icons/logo.svg">
+          </object>
+          <div class="footer-links text-reversal">
+            <a href="#services">
+              <span data-hover="Услуги">Услуги</span>
+            </a>
+            <a href="#directions">
+            <span data-hover="Направления работы">
+              Направления работы
+            </span>
+            </a>
+            <a href="#work-steps">
+            <span data-hover="Этапы работы">
+              Этапы работы
+            </span>
+            </a>
+            <a href="#about">
+            <span data-hover="О компании">
+              О компании
+            </span>
+            </a>
+            <a href="#contacts">
+            <span data-hover="Контакты">
+              Контакты
+            </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-end center-flex">
+        <div class="center-flex">2024 IVEX GROUP</div>
+        <div class="center-flex privacy-policy">
+          <span>Политика конфиденциальности</span>
+          <span>Информация о cookies</span>
+        </div>
+      </div>
+    </footer>
+  </nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/svg-loader.js" type="application/javascript"></script>
+<script src="/js/map-legend.js" type="application/javascript"></script>
+<script src="/js/type-switch.js" type="application/javascript"></script>
+<script src="/js/swiper.js" type="application/javascript"></script>
+<script src="/js/mobile-menu.js" type="application/javascript"></script>
+<script src="/js/motion.js" type="application/javascript"></script>
+<script src="/js/ymap.js" type="application/javascript"></script>
+<script src="/js/form.js" type="application/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</html>

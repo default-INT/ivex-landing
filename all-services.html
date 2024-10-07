@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+  <link href="/assets/base.css" rel="stylesheet">
+  <link href="/assets/main.css" rel="stylesheet">
+  <link href="/assets/services-section.css" rel="stylesheet">
+  <link href="/assets/main-map.css" rel="stylesheet">
+  <link href="/assets/work-steps.css" rel="stylesheet">
+  <link href="/assets/about.css" rel="stylesheet">
+  <link href="/assets/contacts.css" rel="stylesheet">
+  <link href="/assets/footer.css" rel="stylesheet">
+  <link href="/assets/motion.css" rel="stylesheet">
+  <link href="/assets/swiper.css" rel="stylesheet">
+  <link href="/assets/all-service-main.css" rel="stylesheet">
+  <link href="/assets/mobile-menu.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/validator@13.12.0/validator.min.js"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=68f5fe89-5e97-40ae-908f-813b01ebc585&lang=ru_RU"></script>
+  <title>Vetex</title>
+</head>
+<body>
+<header class="header">
+  <div class="inner-header">
+    <div class="header-main-container">
+      <object type="image/svg+xml" class="logo svg-load" data="/icons/logo.svg">
+      </object>
+      <div class="header-contact-list">
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/mail.svg"></object>
+          <div>
+            <div class="secondary-text">Электронная почта</div>
+            <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Телефон РФ</div>
+            <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Телефон РБ</div>
+            <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
+          </div>
+        </div>
+        <div class="header-contact-item">
+          <object class="contact-icon" type="image/svg+xml" data="/icons/home-pin.svg">
+          </object>
+          <div>
+            <div class="secondary-text">Адрес</div>
+            <a
+              href="https://yandex.by/maps/org/ivex_group/7025704217/?ll=27.685435%2C53.860031&z=19.37"
+              target="_blank"
+              class="bold-text"
+            >
+              Минск, Партизанский пр-п. 40/2
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="social-links header-social-links">
+        <a href="https://t.me/ivexgroup_manager" target="_blank">
+          <object class="svg-load" type="image/svg+xml" data="/icons/telegram.svg"></object>
+        </a>
+        <a href="https://www.linkedin.com/company/ivex-group" target="_blank">
+          <object class="svg-load" type="image/svg+xml" data="/icons/linkedin.svg"></object>
+        </a>
+        <a href="https://wa.me/79107809501" target="_blank">
+          <object class="svg-load" type="image/svg+xml" data="/icons/whatsapp.svg"></object>
+        </a>
+      </div>
+      <button id="menuButton" type="button">
+        <object type="image/svg+xml" class="burger-icon svg-load" data="/icons/burger.svg"></object>
+      </button>
+    </div>
+  </div>
+</header>
+<section class="main-landscape all-service-layout">
+  <div style="background-image: url('/image/china.jpeg')" class="background-image"></div>
+  <nav class="nav-bar">
+    <div class="links text-reversal">
+      <a href="/#services">
+        <span data-hover="Услуги">Услуги</span>
+      </a>
+      <a href="/#directions">
+        <span data-hover="Направления работы">
+          Направления работы
+        </span>
+      </a>
+      <a href="/#work-steps">
+        <span data-hover="Этапы работы">
+          Этапы работы
+        </span>
+      </a>
+      <a href="/#about">
+        <span data-hover="О компании">
+          О компании
+        </span>
+      </a>
+      <a href="/#contacts">
+        <span data-hover="Контакты">
+          Контакты
+        </span>
+      </a>
+    </div>
+  </nav>
+  <div class="page-layout main-container">
+    <div class="back-btn-container">
+      <a href="/" class="primary-button button-with-icon">
+        <object type="image/svg+xml" data="/icons/all-services/arrow-left.svg"></object>
+        <span>Вернуться на главную</span>
+      </a>
+    </div>
+    <h1 class="title">
+      Комплекс услуг по перевозкам из Китая
+    </h1>
+  </div>
+</section>
+<section class="light-section">
+  <div class="page-layout services-content china-section">
+    <h2 class="section-title china-title">
+      <object type="image/svg+xml" data="/icons/small-logo.svg">
+      </object>
+      <span class="map-section-title">
+        КАРТА ПОГРАН ПЕРЕХОДОВ • <span class="sub-text">РЕАЛЬНЫЙ ТРАНЗИТНЫЙ СРОК</span>
+      </span>
+    </h2>
+
+    <div class="scoreboard fade-ease-in">
+      <div class="score-item">
+        <span class="label">Шанхай - Москва •</span>
+        <span class="value">14 - 18 дней</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Шанхай - Минск •</span>
+        <span class="value">15 - 19 дней</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Шанхай - Екатеринбург •</span>
+        <span class="value">12 - 16 дней</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Шанхай - Германия •</span>
+        <span class="value">20 - 25 дней</span>
+      </div>
+      <div class="score-item">
+        <span class="label">Шанхай - Новосибирск •</span>
+        <span class="value">11 - 15 дней </span>
+      </div>
+    </div>
+
+    <div class="china-map-layout">
+      <object type="image/svg+xml" class="china-map fade-ease-in svg-load" data="/icons/all-services/china.svg"></object>
+      <div class="china-legend fade-ease-in">
+        <div class="china-legend-item" data-to-hover="kazakhstan-border">
+          <div class="title">
+            <object type="image/svg+xml" class="svg-load" data="/icons/all-services/china-legend-icon.svg"></object>
+            <span>КИТАЙ → КАЗАХСТАН</span>
+          </div>
+          <ul class="legend-list">
+            <li>Хоргос (CN) - Нур Жолы (КZ)</li>
+            <li>Алашанькоу (CN) - Достык (KZ)</li>
+            <li>Покиту (CN) - Бахты (KZ)</li>
+            <li>Зимунай (CN) - Майкапчагай (KZ)</li>
+          </ul>
+        </div>
+        <div class="china-legend-item" data-to-hover="russia-border">
+          <div class="title">
+            <object type="image/svg+xml" class="china-russia-icon svg-load" data="/icons/all-services/china-legend-icon.svg"></object>
+            <span>КИТАЙ → РОССИЯ</span>
+          </div>
+          <ul class="legend-list">
+            <li>Маньчжурия (CN) - Забайкальск (RU)</li>
+            <li>Хэйхэ (CN) - Кани-Курган (RU)</li>
+            <li>Мишань (CN) - Турий Рог (RU)</li>
+            <li>Суйфэньхэ (CN) - Пограничный (RU)</li>
+            <li>Дуннин (CN) - Полтавка (RU)</li>
+            <li>Хуньчунь (CN) - Краскино (RU)</li>
+          </ul>
+        </div>
+        <div class="china-legend-item" data-to-hover="mongolia-border">
+          <div class="title">
+            <object type="image/svg+xml" class="china-mongolia-icon svg-load" data="/icons/all-services/china-legend-icon.svg"></object>
+            <span>КИТАЙ → МОНГОЛИЯ</span>
+          </div>
+          <ul class="legend-list">
+            <li>Такешикен (CN) - Булган (MN)</li>
+            <li>Эрлянь (CN) - Замын-Удэ (MN)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="page-layout services-content">
+    <h2 class="section-title">
+      <object type="image/svg+xml" data="/icons/small-logo.svg">
+      </object>
+      <span>КОМПЛЕКС УСЛУГ ПО ПЕРЕВОЗКАМ ИЗ КИТАЯ</span>
+    </h2>
+
+    <div class="services-list china-service-list">
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/delivery.svg">
+          </object>
+          <div class="service-text">
+            Доставка от двери до двери
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/people.svg">
+          </object>
+          <div class="service-text">
+            Возможность экспресс-доставки<br>
+            <i>*два водителя в рейсе</i>
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/photo.svg">
+          </object>
+          <div class="service-text">
+            Фото и видеофиксация на каждом этапе перевозки (погрузка/перегрузка/разгрузка)
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/hands.svg">
+          </object>
+          <div class="service-text">
+            Согласование деталей отгрузки с отправителем
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/documents.svg">
+          </object>
+          <div class="service-text">
+            Документальное сопровождение:<br>
+            экспортное оформление на территории Китая, оформление таможенного транзита, оформление CMR накладных и т.д.
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/attention.svg">
+          </object>
+          <div class="service-text">
+            Консультация по перевозке ADR грузов
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/calendar.svg">
+          </object>
+          <div class="service-text">
+            Ежедневное информирование о местоположении груза
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/storage.svg">
+          </object>
+          <div class="service-text">
+            Складские услуги во Внутреннем Китае и на границах
+          </div>
+        </div>
+      </div>
+      <div class="item-border">
+        <div class="item-border-inner">
+          <object class="service-icon" type="image/svg+xml" data="/icons/all-services/box.svg">
+          </object>
+          <div class="service-text">
+            Дополнительная упаковка/переупаковка/маркировка грузов
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light-section">
+  <div class="main-form-container bottom-form-container">
+    <h2 class="bottom-title">
+      Оставьте заявку, и мы свяжемся с Вами для обсуждения деталей перевозки
+    </h2>
+    <form class="main-form bottom-form">
+      <div class="form-content">
+        <div class="field">
+          <label for="fullName" class="required">Имя</label>
+          <input id="fullName" name="fullName" placeholder="Как к вам обращаться?">
+        </div>
+        <div class="field">
+          <label for="company" class="required">Компания</label>
+          <input id="company" name="company" placeholder="Какую компанию вы представляете?">
+        </div>
+
+        <div class="field">
+          <label for="phone" class="required">Телефон</label>
+          <input id="phone" name="phone" placeholder="+">
+        </div>
+        <div class="field">
+          <label for="email" class="required">Электронная почта</label>
+          <input id="email" name="email" placeholder="Укажите ваш электронный адрес">
+        </div>
+
+        <div class="field wide-field">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" placeholder="Добавьте необходимые комментарии"></textarea>
+        </div>
+      </div>
+      <label class="center-flex field-checkbox">
+        <input name="isSubmitted" type="checkbox">
+        <span>Даю согласие на обработку персональных данных</span>
+      </label>
+      <div class="error-msg" style="display: none"></div>
+      <div class="actions">
+        <button type="submit" class="primary-button">Запросить ставку</button>
+      </div>
+    </form>
+    <div class="center-flex wechat-container">
+      <button class="primary-button green-button button-with-icon" style="padding: 10px 32px">
+        <object type="image/svg+xml" data="/icons/wechat.svg"></object>
+        <span>СВЯЗАТЬСЯ ЧЕРЕЗ WECHAT</span>
+      </button>
+    </div>
+  </div>
+</section>
+<footer class="footer" style="border: 1px solid var(--light-on-sur-200)">
+  <div class="page-layout services-content footer-layout">
+    <nav class="footer-nav">
+      <object type="image/svg+xml" class="logo" data="/icons/logo.svg">
+      </object>
+      <div class="footer-links text-reversal">
+        <a href="/#services">
+          <span data-hover="Услуги">Услуги</span>
+        </a>
+        <a href="/#directions">
+          <span data-hover="Направления работы">
+            Направления работы
+          </span>
+        </a>
+        <a href="/#work-steps">
+          <span data-hover="Этапы работы">
+            Этапы работы
+          </span>
+        </a>
+        <a href="/#about">
+          <span data-hover="О компании">
+            О компании
+          </span>
+        </a>
+        <a href="/#contacts">
+          <span data-hover="Контакты">
+            Контакты
+          </span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-end center-flex">
+    <div class="center-flex">2024 IVEX GROUP</div>
+    <div class="center-flex privacy-policy">
+      <span>Политика конфиденциальности</span>
+      <span>Информация о cookies</span>
+    </div>
+  </div>
+</footer>
+<nav class="mobile-menu" style="display: none">
+  <div class="mobile-content">
+    <div class="mobile-links text-reversal">
+      <a href="/#services">
+        <span data-hover="Услуги">Услуги</span>
+      </a>
+      <a href="/#directions">
+        <span data-hover="Направления работы">
+          Направления работы
+        </span>
+      </a>
+      <a href="/#work-steps">
+        <span data-hover="Этапы работы">
+          Этапы работы
+        </span>
+      </a>
+      <a href="/#about">
+        <span data-hover="О компании">
+          О компании
+        </span>
+      </a>
+      <a href="/#contacts">
+        <span data-hover="Контакты">
+          Контакты
+        </span>
+      </a>
+    </div>
+    <div class="mobile-contacts">
+      <div class="header-contact-item">
+        <object class="contact-icon" type="image/svg+xml" data="/icons/mail.svg">
+        </object>
+        <div>
+          <div class="secondary-text">Электронная почта</div>
+          <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
+        </div>
+      </div>
+      <div class="header-contact-item">
+        <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+        </object>
+        <div>
+          <div class="secondary-text">Телефон РФ</div>
+          <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
+        </div>
+      </div>
+      <div class="header-contact-item">
+        <object class="contact-icon" type="image/svg+xml" data="/icons/home-pin.svg">
+        </object>
+        <div>
+          <div class="secondary-text">Адрес</div>
+          <a
+            href="https://yandex.by/maps/org/ivex_group/7025704217/?ll=27.685435%2C53.860031&z=19.37"
+            target="_blank"
+            class="bold-text"
+          >
+            Минск, Партизанский пр-п. 40/2 09:00 - 18:00 пн-пт
+          </a>
+        </div>
+      </div>
+      <div class="header-contact-item">
+        <object class="contact-icon" type="image/svg+xml" data="/icons/phone.svg">
+        </object>
+        <div>
+          <div class="secondary-text">Телефон РБ</div>
+          <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="page-layout services-content footer-layout">
+      <nav class="footer-nav">
+        <object type="image/svg+xml" class="logo" data="/icons/logo.svg">
+        </object>
+      </nav>
+    </div>
+    <div class="footer-end center-flex">
+      <div class="center-flex">2024 IVEX GROUP</div>
+      <div class="center-flex privacy-policy">
+        <span>Политика конфиденциальности</span>
+        <span>Информация о cookies</span>
+      </div>
+    </div>
+  </footer>
+</nav>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/svg-loader.js" type="application/javascript"></script>
+<script src="/js/map-legend.js" type="application/javascript"></script>
+<script src="/js/type-switch.js" type="application/javascript"></script>
+<script src="/js/swiper.js" type="application/javascript"></script>
+<script src="/js/mobile-menu.js" type="application/javascript"></script>
+<script src="/js/motion.js" type="application/javascript"></script>
+<script src="/js/form.js" type="application/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</html>

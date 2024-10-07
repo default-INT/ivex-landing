@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    display: grid;
+    grid-template-rows: auto 300px;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    background: var(--general-dark);
+    z-index: 20;
+    transition: fadeIn 0.3s ease-in-out;
+  }
+
+  .mobile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .mobile-menu .mobile-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 16px 0;
+    gap: 32px
+  }
+
+  .mobile-menu .mobile-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+}

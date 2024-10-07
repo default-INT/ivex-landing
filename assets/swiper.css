@@ -1,0 +1,76 @@
+.swiper-container {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 422px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide > .work-slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 12px;
+}
+
+.swiper-slide > object {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*.swiper-slide img {*/
+/*  display: block;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  object-fit: cover;*/
+/*}*/
+
+.work-slide-item > .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  background: var(--light-on-surf);
+}
+
+.work-slide-item > .step-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-slide-item > .step-info-container > .step-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.work-slide-item > .step-info-container > .description {
+  color: var(--accent-blue);
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  background: var(--accent-blue);
+}
+.swiper-pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 4px;
+}
