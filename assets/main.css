@@ -101,10 +101,39 @@ section {
 
 .right-header > button {
   display: none;
+  position: relative;
   width: 24px;
   height: 24px;
   cursor: pointer;
   transition: 0.3s ease-in;
+}
+
+.right-header > button > span {
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  background-color: var(--accent-blue);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .3s;
+}
+
+.right-header > button > span:first-child {
+  top: calc(50% - 2px - 2px);
+}
+
+.right-header > button > span:last-child {
+  bottom: calc(50% - 2px - 2px);
+}
+
+.right-header > button.open > span:first-child {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.right-header > button.open > span:last-child {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
 }
 
 .right-header > button > object {
@@ -508,6 +537,25 @@ input[type='checkbox'].field-error {
 
 .stat-section {
   position: relative;
+
+  @media (max-width: 767px) {
+    user-select: none
+  }
+}
+
+.swiper-stats {
+  display: none;
+  overflow: hidden;
+  padding: 16px 0;
+  user-select: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.swiper-stats * {
+  user-select: none
 }
 
 .stat-section > .side-opacity {
@@ -516,7 +564,7 @@ input[type='checkbox'].field-error {
   width: 100px;
   height: 100%;
   background: linear-gradient(270deg, rgba(15, 38, 67, 0) 4.5%, #0F2643 76.13%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .stats-content {
@@ -532,7 +580,7 @@ input[type='checkbox'].field-error {
   }
 
   @media (max-width: 767px) {
-    overflow-x: scroll;
+    display: none;
   }
 }
 

@@ -61,14 +61,14 @@ if (mapContainer) {
   setTimeout(() => { pathsObserver.observe(mapContainer) }, 200)
 }
 
-const statContainer = document.querySelector('.stats-content');
+const statSection = document.querySelector('.stat-section');
 
-if (statContainer) {
+if (statSection) {
   const observer = new IntersectionObserver(onStatsIntersection, {
     threshold: 0.1
   })
 
-  observer.observe(statContainer)
+  observer.observe(statSection)
 }
 
 
