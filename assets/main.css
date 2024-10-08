@@ -136,7 +136,7 @@ section {
   transform: translateX(-50%) rotate(-45deg);
 }
 
-.right-header > button > object {
+.right-header > button > svg, .right-header > button > img {
   cursor: pointer;
 }
 
@@ -166,7 +166,7 @@ section {
   }
 }
 
-.social-links > object {
+.social-links > svg, .social-links > img {
   width: 32px;
   height: 32px;
 
@@ -244,7 +244,7 @@ section {
   text-transform: unset;
 }
 
-.primary-button > object {
+.primary-button > svg, .primary-button > img {
   width: 24px;
   height: 24px;
 }
@@ -284,6 +284,10 @@ section {
 
 .section-title .sub-text {
   color: var(--white);
+}
+
+.section-title svg, .section-title img {
+  min-width: 21px;
 }
 
 .bold-p {

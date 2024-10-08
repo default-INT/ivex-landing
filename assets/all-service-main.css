@@ -63,13 +63,15 @@
   }
 }
 
-.china-title object {
+.china-title svg, .china-title img {
+  min-width: 21px;
+
   @media (max-width: 999px) {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   @media (max-width: 767px) {
-    padding-top: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -184,7 +186,7 @@
   list-style: inside;
 }
 
-.china-legend-item > .title > svg {
+.china-legend-item > .title > svg, .china-legend-item > .title > img {
   width: 32px;
   height: 32px;
 }

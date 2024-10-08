@@ -198,7 +198,7 @@
   color: var(--secondary);
 }
 
-.transport-item-inner > object {
+.transport-item-inner > svg, .transport-item-inner > img {
   width: 315px;
   height: 110px;
 

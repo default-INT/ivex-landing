@@ -1,30 +1,31 @@
-const animCounter = element => {
-  const toValue = Number(element.dataset.toValue);
+const animateCounter = (element, start = 0) => {
+  let startTime = null;
+  const end = Number(element.dataset.toValue);
   const endsSymbl = element.dataset.endsSymbl || '';
-  const duration = element.dataset.duration || 700;
+  const duration = Number(element.dataset.duration) || 1000;
 
-  if (!toValue) return
+  const animation = (currentTime) => {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
 
-  let current = 0;
+    const progress = Math.min(timeElapsed / duration, 1);
+    const currentNumber = Math.floor(progress * (end - start) + start);
 
-  const intervalStep = Math.abs(Math.floor(duration / toValue));
-  const step = intervalStep === 0 ? Math.abs(Math.floor(toValue / duration)) * 2 : 1
+    element.textContent = currentNumber + endsSymbl;
 
-  const timerId = setInterval(() => {
-    current += step;
-    const newVal = current > toValue ? toValue : current;
+    if (timeElapsed < duration) return requestAnimationFrame(animation);
 
-    element.textContent = newVal + endsSymbl
+    element.textContent = end + endsSymbl;
+  }
 
-    if (current >= toValue) clearInterval(timerId)
-  }, intervalStep)
+  requestAnimationFrame(animation);
 }
 
 const onStatsIntersection = (entries, observer) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return
 
-    document.querySelectorAll('.stat-item > .value').forEach(animCounter)
+    document.querySelectorAll('.stat-item > .value').forEach(animateCounter)
     observer.unobserve(entry.target)
   });
 }

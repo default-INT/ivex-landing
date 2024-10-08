@@ -1,4 +1,4 @@
-const addFadeInHover = (legendSelector, pathSelector, toValue = 0.3) => {
+const addFadeInHover = (legendSelector, pathSelector, toValue = 0, toLegendValue = 0.3) => {
   const allLegendItems = document.querySelectorAll(legendSelector);
 
   allLegendItems.forEach(item => {
@@ -15,7 +15,7 @@ const addFadeInHover = (legendSelector, pathSelector, toValue = 0.3) => {
 
       legendList
         .filter(pathWay => pathWay.dataset?.toHover !== triggeredPath)
-        .forEach(pathWay => pathWay.style.opacity = toValue)
+        .forEach(pathWay => pathWay.style.opacity = toLegendValue)
     })
 
     item.addEventListener('mouseleave', () => {
