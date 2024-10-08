@@ -9,7 +9,21 @@
   --secondary: #98A2BB;
   --accent-blue: #BBD7F7;
 
-  --screen-lg: 1439px
+  --screen-lg: 1439px;
+
+  --header-height: 90px;
+
+  @media (max-width: 1439px) {
+    --header-height: 147px;
+  }
+
+  @media (max-width: 999px) {
+    --header-height: 171px;
+  }
+
+  @media (max-width: 767px) {
+    --header-height: 80px;
+  }
 }
 
 html {

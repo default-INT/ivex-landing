@@ -81,3 +81,15 @@ if (stepsContainer) {
   })
   stepsObserver.observe(stepsContainer)
 }
+
+const stickyNavBar = document.querySelector('.nav-bar');
+
+window.addEventListener('scroll', () => {
+  if (!stickyNavBar) return
+
+  const { top } = stickyNavBar.getBoundingClientRect()
+
+  if (top === 0) return stickyNavBar.classList.add('scrolled')
+
+  return stickyNavBar.classList.remove('scrolled')
+})

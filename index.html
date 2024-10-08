@@ -22,7 +22,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@iconfu/svg-inject@1.2.3/dist/svg-inject.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/validator@13.12.0/validator.min.js"></script>
   <script src="https://api-maps.yandex.ru/v3/?apikey=68f5fe89-5e97-40ae-908f-813b01ebc585&lang=ru_RU"></script>
-  <title>Vetex</title>
+  <title>IVEX Group</title>
 </head>
 <body>
   <header id="request-a-bid" class="header">
@@ -93,35 +93,39 @@
       </div>
     </div>
   </header>
-  <section class="main-landscape">
-    <div style="background-image: url('./image/main-landscape.jpeg')" class="background-image"></div>
-    <nav class="nav-bar">
-      <div class="links text-reversal">
-        <a href="#services">
-          <span data-hover="Услуги">Услуги</span>
-        </a>
-        <a href="#directions">
+  <nav class="nav-bar">
+    <div class="sticky-links links text-reversal">
+      <a href="#services">
+        <span data-hover="Услуги">Услуги</span>
+      </a>
+      <a href="#directions">
           <span data-hover="Направления работы">
             Направления работы
           </span>
-        </a>
-        <a href="#work-steps">
+      </a>
+      <a href="#work-steps">
           <span data-hover="Этапы работы">
             Этапы работы
           </span>
-        </a>
-        <a href="#about">
+      </a>
+      <a href="#about">
           <span data-hover="О компании">
             О компании
           </span>
-        </a>
-        <a href="#contacts">
+      </a>
+      <a href="#contacts">
           <span data-hover="Контакты">
             Контакты
           </span>
-        </a>
-      </div>
-    </nav>
+      </a>
+    </div>
+  </nav>
+  <div
+    style="background-image: url('./image/main-landscape.jpeg'); top: var(--header-height)"
+    class="background-image"
+  >
+  </div>
+  <section class="main-landscape">
     <div class="main-form-container">
       <h1 class="title">
         Автомобильные грузоперевозки
@@ -224,7 +228,7 @@
     <div class="side-opacity" style="right: 0; transform: rotate(180deg);"></div>
   </section>
 
-  <section id="services">
+  <section id="services" style="background: var(--general-dark)">
     <div class="page-layout services-content">
       <h2 class="section-title">
         <img class="injectable-svg" src="./icons/small-logo.svg" alt="SVG Icon" />

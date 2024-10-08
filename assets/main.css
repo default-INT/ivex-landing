@@ -194,6 +194,21 @@ section {
 }
 
 .nav-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 12;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar.scrolled {
+  position: sticky;
+  background: var(--light-on-surf);
+  border-bottom: 2px solid var(--light-on-sur-200);
+}
+
+.sticky-links {
   margin: 0 auto;
   max-width: 1320px;
 }
