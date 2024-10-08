@@ -2,6 +2,7 @@
   .mobile-menu {
     position: fixed;
     display: grid;
+    overflow: scroll;
     grid-template-rows: auto 300px;
     top: 80px;
     width: 100%;

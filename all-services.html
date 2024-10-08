@@ -19,6 +19,7 @@
   <link href="./assets/modal.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/validator@13.12.0/validator.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@iconfu/svg-inject@1.2.3/dist/svg-inject.min.js"></script>
   <script src="https://api-maps.yandex.ru/v3/?apikey=68f5fe89-5e97-40ae-908f-813b01ebc585&lang=ru_RU"></script>
   <title>Vetex</title>
 </head>
@@ -166,7 +167,7 @@
       <div class="china-legend fade-ease-in">
         <div class="china-legend-item" data-to-hover="kazakhstan-border">
           <div class="title">
-            <object type="image/svg+xml" class="svg-load" data="./icons/all-services/china-legend-icon.svg"></object>
+            <img class="injectable-svg" src="./icons/all-services/china-legend-icon.svg" alt="SVG Icon" />
             <span>КИТАЙ → КАЗАХСТАН</span>
           </div>
           <ul class="legend-list">
@@ -178,7 +179,7 @@
         </div>
         <div class="china-legend-item" data-to-hover="russia-border">
           <div class="title">
-            <object type="image/svg+xml" class="china-russia-icon svg-load" data="./icons/all-services/china-legend-icon.svg"></object>
+            <img class="china-russia-icon injectable-svg" src="./icons/all-services/china-legend-icon.svg" alt="SVG Icon" />
             <span>КИТАЙ → РОССИЯ</span>
           </div>
           <ul class="legend-list">
@@ -192,7 +193,7 @@
         </div>
         <div class="china-legend-item" data-to-hover="mongolia-border">
           <div class="title">
-            <object type="image/svg+xml" class="china-mongolia-icon svg-load" data="./icons/all-services/china-legend-icon.svg"></object>
+            <img class="china-mongolia-icon injectable-svg" src="./icons/all-services/china-legend-icon.svg" alt="SVG Icon" />
             <span>КИТАЙ → МОНГОЛИЯ</span>
           </div>
           <ul class="legend-list">
@@ -487,6 +488,8 @@
 <script src="./js/motion.js" type="application/javascript"></script>
 <script src="./js/form.js" type="application/javascript"></script>
 <script src="./js/qr-modal.js" type="application/javascript"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="application/javascript">
+  SVGInject(document.querySelectorAll('.injectable-svg'));
 </script>
 </html>

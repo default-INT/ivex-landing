@@ -26,8 +26,8 @@ section {
   @media (max-width: 767px) {
     position: fixed;
     width: 100%;
-    z-index: 2;
     background: var(--general-dark);
+    z-index: 11;
   }
 }
 
