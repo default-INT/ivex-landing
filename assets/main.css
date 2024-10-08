@@ -204,8 +204,8 @@ section {
 
 .nav-bar.scrolled {
   position: sticky;
-  background: var(--light-on-surf);
-  box-shadow: 0 4px 16px 0 var(--light-on-sur-200);
+  background: var(--light-on-surf-op-82);
+  backdrop-filter: blur(8px);
 }
 
 .sticky-links {
