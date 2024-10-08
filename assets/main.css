@@ -186,17 +186,8 @@ section {
   }
 }
 
-@media (max-width: 767px) {
-  .contact-button {
-    /*width: 100%;*/
-  }
-
-  .contact-button button {
-    /*width: 100%;*/
-  }
-}
-
 .contact-icon {
+  display: flex;
   padding: 6px;
   border-radius: 16px;
   background: var(--light-on-surf);

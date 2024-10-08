@@ -31,31 +31,36 @@
       </object>
       <div class="header-contact-list">
         <div class="header-contact-item">
-          <object class="contact-icon" type="image/svg+xml" data="./icons/mail.svg"></object>
+          <div class="contact-icon">
+            <img class="injectable-svg" src="./icons/mail.svg" alt="SVG Icon" />
+          </div>
           <div>
             <div class="secondary-text">Электронная почта</div>
             <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
           </div>
         </div>
         <div class="header-contact-item">
-          <object class="contact-icon" type="image/svg+xml" data="./icons/phone.svg">
-          </object>
+          <div class="contact-icon">
+            <img class="injectable-svg" src="./icons/phone.svg" alt="SVG Icon" />
+          </div>
           <div>
             <div class="secondary-text">Телефон РФ</div>
             <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
           </div>
         </div>
         <div class="header-contact-item">
-          <object class="contact-icon" type="image/svg+xml" data="./icons/phone.svg">
-          </object>
+          <div class="contact-icon">
+            <img class="injectable-svg" src="./icons/phone.svg" alt="SVG Icon" />
+          </div>
           <div>
             <div class="secondary-text">Телефон РБ</div>
             <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
           </div>
         </div>
         <div class="header-contact-item">
-          <object class="contact-icon" type="image/svg+xml" data="./icons/home-pin.svg">
-          </object>
+          <div class="contact-icon">
+            <img class="injectable-svg" src="./icons/home-pin.svg" alt="SVG Icon" />
+          </div>
           <div>
             <div class="secondary-text">Адрес</div>
             <a
@@ -423,24 +428,27 @@
     </div>
     <div class="mobile-contacts">
       <div class="header-contact-item">
-        <object class="contact-icon" type="image/svg+xml" data="./icons/mail.svg">
-        </object>
+        <div class="contact-icon">
+          <img class="injectable-svg" src="./icons/mail.svg" alt="SVG Icon" />
+        </div>
         <div>
           <div class="secondary-text">Электронная почта</div>
           <a href="mailto:sales@ivex-group.com" class="bold-text">sales@ivex-group.com</a>
         </div>
       </div>
       <div class="header-contact-item">
-        <object class="contact-icon" type="image/svg+xml" data="./icons/phone.svg">
-        </object>
+        <div class="contact-icon">
+          <img class="injectable-svg" src="./icons/phone.svg" alt="SVG Icon" />
+        </div>
         <div>
           <div class="secondary-text">Телефон РФ</div>
           <a href="skype:+79107809501?call" class="bold-text">+7 (910) 780 95 01</a>
         </div>
       </div>
       <div class="header-contact-item">
-        <object class="contact-icon" type="image/svg+xml" data="./icons/home-pin.svg">
-        </object>
+        <div class="contact-icon">
+          <img class="injectable-svg" src="./icons/home-pin.svg" alt="SVG Icon" />
+        </div>
         <div>
           <div class="secondary-text">Адрес</div>
           <a
@@ -453,8 +461,9 @@
         </div>
       </div>
       <div class="header-contact-item">
-        <object class="contact-icon" type="image/svg+xml" data="./icons/phone.svg">
-        </object>
+        <div class="contact-icon">
+          <img class="injectable-svg" src="./icons/phone.svg" alt="SVG Icon" />
+        </div>
         <div>
           <div class="secondary-text">Телефон РБ</div>
           <a href="skype:+375177809501?call" class="bold-text">+375 (17) 780 95 01</a>
@@ -480,6 +489,7 @@
 </nav>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="./js/svg-loader.js" type="application/javascript"></script>
 <script src="./js/map-legend.js" type="application/javascript"></script>
 <script src="./js/type-switch.js" type="application/javascript"></script>
@@ -488,8 +498,5 @@
 <script src="./js/motion.js" type="application/javascript"></script>
 <script src="./js/form.js" type="application/javascript"></script>
 <script src="./js/qr-modal.js" type="application/javascript"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="application/javascript">
-  SVGInject(document.querySelectorAll('.injectable-svg'));
-</script>
+<script src="./js/inject-svg.js" type="application/javascript"></script>
 </html>
