@@ -205,7 +205,7 @@ section {
 .nav-bar.scrolled {
   position: sticky;
   background: var(--light-on-surf);
-  border-bottom: 2px solid var(--light-on-sur-200);
+  box-shadow: 0 4px 16px 0 var(--light-on-sur-200);
 }
 
 .sticky-links {
