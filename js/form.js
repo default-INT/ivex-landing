@@ -1,9 +1,9 @@
 const requiredMsg = 'Заполните все необходимые поля'
 const phoneRegExp = /^\+[0-9]{1,4}[0-9]{3,14}$/
 
-const SERVICE_ID = 'service_b9tp2ru';
-const TEMPLATE_ID = 'template_ek51xq8';
-const USER_ID = 'j-kpXsvTRcviF6iSe';
+const SERVICE_ID = 'service_icpn5vs';
+const TEMPLATE_ID = 'template_yi58xu6';
+const USER_ID = 'CRfe5vY1x95BvOV80';
 
 const notRequiredFields = ['comment'];
 
@@ -13,7 +13,7 @@ const validateForm = form => {
   const fields = Object.entries(form)
     .filter(([field]) => !notRequiredFields.includes(field))
     .reduce((prev, [key, value]) => {
-      if (!validator.isEmpty(value)) return {...prev, [key]: [] }
+      if (typeof value !== 'string' || !validator.isEmpty(value)) return {...prev, [key]: [] }
 
       isValid = false
       return {...prev, [key]: [requiredMsg] };
@@ -29,13 +29,11 @@ const validateForm = form => {
     fields.phone.push('Телефон должен быть в формате +XXXXXXXXXXX')
   }
 
-  if (form.isSubmitted !== 'on') {
+  if (!form.isSubmitted) {
     isValid = false
 
     fields.isSubmitted = ['Заполните все необходимые поля']
   }
-
-  console.log(form)
 
   return { isValid, fields }
 }
@@ -84,7 +82,8 @@ const handleFormSubmit = async event => {
   const errorMsg = form.querySelector('.error-msg')
 
   try {
-    const formData = Object.fromEntries(new FormData(form).entries());
+    const isSubmitted = form.querySelector(`[name=isSubmitted]`).checked
+    const formData = { ...Object.fromEntries(new FormData(form).entries()), isSubmitted  };
 
     clearErrors(form)
 
