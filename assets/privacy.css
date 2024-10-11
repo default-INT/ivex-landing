@@ -1,0 +1,39 @@
+.privacy-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+.privacy-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chapter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px
+}
+
+.privacy-secondary-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 800px;
+}
+
+.paragraph {
+
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.paragraph ul {
+  padding-left: 12px;
+}
