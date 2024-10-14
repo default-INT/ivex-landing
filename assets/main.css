@@ -5,11 +5,38 @@ section {
 .logo {
   height: 40px;
   width: 113px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 767px) {
     height: 32px;
     width: 75px;
   }
+}
+
+.nav-bar.scrolled a:first-child {
+  display: unset;
+}
+
+.nav-bar a:first-child {
+  display: none;
+}
+
+a > .logo:hover {
+  opacity: 0.7;
+}
+
+.nav-logo {
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+  opacity: 0.7;
+}
+
+.scrolled .nav-logo {
+  display: flex;
+  animation: fadeIn var(--seconds) ease-in forwards;
 }
 
 .header {
@@ -317,10 +344,11 @@ section {
   z-index: 1;
   gap: 64px;
   padding: 16px 0;
+  align-items: center;
   max-width: 1320px;
 
   @media (max-width: 999px) {
-    gap: 48px;
+    gap: 32px;
     justify-content: center;
   }
 }
