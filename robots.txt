@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /icons/
+Disallow: /assets/
+Disallow: /js/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /icons/
+Disallow: /assets/
+Disallow: /js/
+
+Sitemap: https://ivex-group.com/sitemap.xml
