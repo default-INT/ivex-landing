@@ -10,6 +10,10 @@ new Swiper('.swiper-stats', {
   grabCursor: true,
   initialSlide: 0,
   centeredSlides: true,
+  navigation: {
+    nextEl: '.stats-button-next',
+    prevEl: '.stats-button-prev',
+  },
   on: {
     init: function () {
       this.setTranslate(50)
